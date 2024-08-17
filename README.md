@@ -1,6 +1,11 @@
 # k8s-study
 k8s 실습 repo
 
+## VM 3개 
+1. control plane
+2. node 1
+3. node 2
+
 ### 포트 열려있나 확인
 ```
 nc 127.0.0.1 6443 -v
@@ -88,3 +93,4 @@ kubectl get nodes
 
 https://velog.io/@juhoon212/Kubernetes-Status-Not-Ready [참고]
 
+## worker node 구성
