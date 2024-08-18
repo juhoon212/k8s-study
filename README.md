@@ -117,4 +117,13 @@ https://velog.io/@juhoon212/Kubernetes-Status-Not-Ready [참고]
 kubeadm token list
 kubeadm token delete [token이름]
 kubeadm token create --print-join-command
+d
+```
+
+### ERROR
+<img width="624" alt="스크린샷 2024-08-18 오후 6 08 50" src="https://github.com/user-attachments/assets/91e3695f-b1ea-4458-8bfa-218aab19d7be">
+
+```
+# 이 에러가 node쪽에 뜬다면
+kubeadm reset 하고 다시 join을 해보면 된다.
 ```
