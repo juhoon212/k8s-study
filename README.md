@@ -108,3 +108,13 @@ kubectl get nodes
 https://velog.io/@juhoon212/Kubernetes-Status-Not-Ready [참고]
 
 ## worker node 구성
+
+### ERROR
+
+```
+# error execution phase preflight: couldn't validate the identity of the API Server: invalid discovery token CA certificate hash: invalid hash "sha256:807b108710efaa0eebeb4dfb19e481a3fa", expected a 32 byte SHA-256 hash, found 17 bytes To see the stack trace of this error execute with --v=5 or higher
+
+kubeadm token list
+kubeadm token delete [token이름]
+kubeadm token create --print-join-command
+```
