@@ -9,6 +9,15 @@ k8s 실습 repo
 ### 설치전 환경설정
 
 ```
+# docker 설치
+
+# 도커 however docker-cli:arm-64 ~~~ 오류
+curl -fsSL get.docker.com | CHANNEL=stable sh
+sudo apt install docker-ce
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+```
 # swap 끄기
 1) Swap disabled
 # swapoff -a && sed -i '/swap/s/^/#/' /etc/fstab
