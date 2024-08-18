@@ -5,6 +5,27 @@ k8s 실습 repo
 1. control plane
 2. node 1
 3. node 2
+   
+### 설치전 환경설정
+
+```
+# swap 끄기
+1) Swap disabled
+# swapoff -a && sed -i '/swap/s/^/#/' /etc/fstab
+
+2) Letting iptables see bridged traffic
+# cat <<EOF > /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+# sysctl --system
+
+# 방화벽 disable
+3) Disable firewall
+# systemctl stop firewalld 
+# systemctl disable firewalld
+
+```
 
 ### 포트 열려있나 확인
 ```
@@ -29,23 +50,7 @@ curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.30/deb/Release.key | sudo gpg --
 echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.30/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
 ```
 
-```
-# swap 끄기
-1) Swap disabled
-# swapoff -a && sed -i '/swap/s/^/#/' /etc/fstab
 
-2) Letting iptables see bridged traffic
-# cat <<EOF > /etc/sysctl.d/k8s.conf
-net.bridge.bridge-nf-call-ip6tables = 1
-net.bridge.bridge-nf-call-iptables = 1
-EOF
-# sysctl --system
-
-# 방화벽 disable
-3) Disable firewall
-# systemctl stop firewalld 
-# systemctl disable firewalld
-```
 
 
 
