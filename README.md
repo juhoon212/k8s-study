@@ -93,9 +93,11 @@ $ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ### CNI 설정 (Container Network Interface)
 
+- weave net github : https://github.com/rajch/weave#using-weave-on-kubernetes
+
 ```
 # weave cni download(다른 CNI 설치해도됨)
-kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
+kubectl apply -f https://reweave.azurewebsites.net/k8s/v1.29/net.yaml
 ```
 
 ### 확인
