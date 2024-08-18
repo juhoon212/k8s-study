@@ -31,7 +31,7 @@ EOF
 
 # 방화벽 disable
 3) Disable firewall
-# disable ufw
+# ufw disable
 # systemctl stop ufw
 
 ```
