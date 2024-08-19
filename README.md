@@ -77,7 +77,7 @@ systemctl enable kubelet
 ## master plane 구성
 
 ```
-kubeadmn init
+kubeadm init
 
 # 완료 시
 kubeadm join 10.100.0.104:6443 --token 1ou05o.kkist9u6fbc2uhp3 --discovery-token-ca-cert-hash sha256:8d9a7308ea6ff73.........576c112f326690
@@ -110,6 +110,8 @@ kubectl get nodes
 https://velog.io/@juhoon212/Kubernetes-Status-Not-Ready [참고]
 
 ## worker node 구성
+
+https://jbground.tistory.com/107 참고
 
 ### ERROR
 
