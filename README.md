@@ -93,12 +93,9 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ### CNI 설정 (Container Network Interface)
 
-- weave net github : https://github.com/rajch/weave#using-weave-on-kubernetes
+https://diamond-goose.tistory.com/65#google_vignette 참고
 
-```
-# weave cni download(다른 CNI 설치해도됨)
-kubectl apply -f https://reweave.azurewebsites.net/k8s/v1.29/net.yaml
-```
+
 
 ### 확인
 ```
@@ -110,8 +107,6 @@ kubectl get nodes
 https://velog.io/@juhoon212/Kubernetes-Status-Not-Ready [참고]
 
 ## worker node 구성
-
-https://jbground.tistory.com/107 참고
 
 ### ERROR
 
