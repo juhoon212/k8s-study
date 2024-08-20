@@ -1,6 +1,9 @@
 # k8s-study
 k8s 실습 repo
 
+### 환경설정
+ubuntu 22.04.04 LTS
+
 ## VM 3개 
 1. control plane
 2. node 1
@@ -11,10 +14,8 @@ k8s 실습 repo
 ```
 # docker 설치
 
-# 도커 however docker-cli:arm-64 ~~~ 오류
-curl -fsSL get.docker.com | CHANNEL=stable sh
-sudo apt install docker-ce
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+# 도커 설치
+sudo apt-get install docker.io
 ```
 
 ```
