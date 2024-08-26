@@ -5,7 +5,7 @@ k8s 실습 repo
 ubuntu 22.04.04 LTS
 
 ## VM 3개 
-1. control plane
+1. control plane(master)
 2. node 1
 3. node 2
    
