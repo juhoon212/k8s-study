@@ -8,6 +8,9 @@ ubuntu 22.04.04 LTS
 1. control plane(master)
 2. node 1
 3. node 2
+
+### 참고
+https://terianp.tistory.com/177
    
 ### 설치전 환경설정
 
