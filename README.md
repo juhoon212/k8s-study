@@ -1,6 +1,8 @@
 # k8s-study
 k8s 실습 repo
 
+## 간단한 환경이면 minikube를 쓰자..
+
 ### 환경설정
 ubuntu 22.04.04 LTS
 
