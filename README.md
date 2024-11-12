@@ -132,3 +132,9 @@ d
 # 이 에러가 node쪽에 뜬다면
 kubeadm reset 하고 다시 join을 해보면 된다.
 ```
+### 가벼운 Tip
+
+```
+# 가벼운 test pod(내부 통신)  
+k run curl -it --rm --image curlimages/curl -- sh
+```
